@@ -3,7 +3,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:untitled/bottomNavbar.dart';
-import 'package:untitled/sign%20up.dart';
+import 'package:untitled/screens/sign%20up.dart';
+
+
+
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);

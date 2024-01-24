@@ -1,7 +1,8 @@
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:untitled/sign%20in.dart';
+import 'package:untitled/screens/sign%20in.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -16,15 +17,15 @@ class _HomeScreenState extends State<HomeScreen> {
     Timer(
         Duration(seconds: 4),
         () => Navigator.push(
-            context, CupertinoPageRoute(builder: (_) => SignIn())));
+            context, CupertinoPageRoute(builder: (_) => const SignIn())));
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.deepOrange,
-      body: Container(
+      body: SizedBox(
         width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
